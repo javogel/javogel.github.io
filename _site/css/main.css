@@ -55,9 +55,9 @@ a:hover {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 200px auto; }
+  margin: 80px auto; }
 
 .main-phrase {
   font-family: 'Old Standard TT', serif;
-  font-size: 36px;
+  font-size: 10em;
   max-width: 60%; }

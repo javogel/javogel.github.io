@@ -36,74 +36,92 @@ $on-laptop:        800px;
 // }
 
 // Import partials from the `minima` theme.
-@import "minima";
+// @import "minima";
 
 
 
-// Semantic UI has these classes, however they're only applicable to
-// grids, containers, rows and columns.
-// plus, there isn't any `mobile hidden`, `X hidden` class.
-// this snippet is using the same class names and same approach
-// plus a bit more but to all elements.
-//
-// see https://github.com/Semantic-Org/Semantic-UI/issues/1114
 
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  [class*="mobile hidden"],
-  [class*="tablet only"]:not(.mobile),
-  [class*="computer only"]:not(.mobile),
-  [class*="large screen only"]:not(.mobile),
-  [class*="widescreen only"]:not(.mobile),
-  [class*="or lower hidden"] {
-    display: none !important;
-  }
+html, body {
+    height: 100%;
+    background-color: #333;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
 }
 
-/* Tablet / iPad Portrait */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  [class*="mobile only"]:not(.tablet),
-  [class*="tablet hidden"],
-  [class*="computer only"]:not(.tablet),
-  [class*="large screen only"]:not(.tablet),
-  [class*="widescreen only"]:not(.tablet),
-  [class*="or lower hidden"]:not(.mobile) {
-    display: none !important;
-  }
+
+header {
+  text-align: center;
 }
 
-/* Computer / Desktop / iPad Landscape */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  [class*="mobile only"]:not(.computer),
-  [class*="tablet only"]:not(.computer),
-  [class*="computer hidden"],
-  [class*="large screen only"]:not(.computer),
-  [class*="widescreen only"]:not(.computer),
-  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
-    display: none !important;
-  }
+.main-nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-/* Large Monitor */
-@media only screen and (min-width: 1200px) and (max-width: 1919px) {
-  [class*="mobile only"]:not([class*="large screen"]),
-  [class*="tablet only"]:not([class*="large screen"]),
-  [class*="computer only"]:not([class*="large screen"]),
-  [class*="large screen hidden"],
-  [class*="widescreen only"]:not([class*="large screen"]),
-  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
-    display: none !important;
-  }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+
 }
 
-/* Widescreen Monitor */
-@media only screen and (min-width: 1920px) {
-  [class*="mobile only"]:not([class*="widescreen"]),
-  [class*="tablet only"]:not([class*="widescreen"]),
-  [class*="computer only"]:not([class*="widescreen"]),
-  [class*="large screen only"]:not([class*="widescreen"]),
-  [class*="widescreen hidden"],
-  [class*="widescreen or lower hidden"] {
-    display: none !important;
-  }
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+
+.logo {
+  display: inline;
+  font-size: 18px;
+  border-style: solid;
+  border-width: 0.7px;
+  border-color: white;
+  padding: 10px 10px 5px 10px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  margin-right: 250px;
+}
+
+
+.menu {
+
+}
+
+.menu li {
+  display: inline;
+  margin: auto 15px;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+    margin: 0;
+}
+
+.home-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 200px auto;
+
+}
+
+.main-phrase {
+  font-family: 'Old Standard TT', serif;
+  font-size: 36px;
+  max-width: 60%;
+
 }

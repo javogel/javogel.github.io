@@ -1,133 +1,59 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+@import "uno";
+@import "tables";
+@import "monokai";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+/* Modifications */
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// Import partials from the `minima` theme.
-// @import "minima";
-
-
-
-
-html, body {
-    height: 100%;
-    background-color: #333;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    margin: 0;
+pre.highlight,
+.highlight pre {
+  padding: 10px;
 }
 
-
-header {
-  text-align: center;
+pre.highlight code,
+.highlight pre code {
+  white-space: pre-wrap;
 }
 
-.main-nav-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 50px;
+.btn,
+.navigation__item a {
+  margin: 5px 0;
+  white-space: nowrap;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
-
+.pagination__page-number {
+  display: inline-block;
+  padding: 10px;
 }
 
-a {
-  color: white;
+.categories a,
+.tags a {
+  border: 1px solid #e25440;
+  border-radius: 20px;
+  color: #e25440;
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  text-shadow: none;
+  white-space: nowrap;
 }
 
-a:hover {
-  color: white;
+.post-meta__tags {
+  font-size: 12px;
+  padding: 0 5px;
 }
 
-
-.logo {
-  display: inline;
-  font-size: 18px;
-  border-style: solid;
-  border-width: 0.7px;
-  border-color: white;
-  padding: 10px 10px 5px 10px;
-  border-top-width: 0px;
-  border-left-width: 0px;
-  margin-right: 250px;
+.footer__copyright {
+    margin: 0 20px 10px;
 }
 
-
-.menu {
-
-}
-
-.menu li {
-  display: inline;
-  margin: auto 15px;
-}
-
-.site-wrapper {
-    display: table;
-    width: 100%;
-    min-height: 100%;
-    -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-    margin: 0;
-}
-
-.home-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 80px auto;
-
-}
-
-.main-phrase {
-  font-family: 'Old Standard TT', serif;
-  font-size: 10em;
-  max-width: 60%;
-}
-
-.complementary-words {
-  font-family: 'Old Standard TT', serif;
-  font-size: 7em;
-  max-width: 60%;
-
+.user-image {
+  margin-bottom: 1.2em;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  // border: 3px solid #fff;
+  // border-radius:100%;
 }

@@ -1,7 +1,7 @@
 # Site settings
 title: Johannus Vogel
-description: 'Software Engineer, artist, internet poet'
-url: 'http://joshgerdes.com/jekyll-uno'
+description: 'Software engineer, artist, entrepreneur and internet poet'
+url: 'http://johannusvogel.com'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
@@ -12,7 +12,7 @@ author:
   twitter_username: johannusvogel
   facebook_username: johannus.vogel
   github_username:  javogel
-  linkedin_username:  johannus.vogel
+  linkedin_username:  johannusvogel
 
 defaults:
   -

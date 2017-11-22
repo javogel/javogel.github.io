@@ -1,5 +1,5 @@
 ---
-title: 'Koans: Ancient wisdom applied to learning new programming languages'
+title: '2017-11-22-Koans:-Ancient-wisdom-applied-to-learning-new-programming-languages'
 date: {}
 categories:
   - jekyll

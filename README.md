@@ -1,6 +1,6 @@
 # Personal site
 
-A simple Jekyll based portfolio and blog site. Live @ [johannusvogel.com](johannusvogel.com)
+A simple Jekyll based portfolio and blog site. Live @ [http://www.johannusvogel.com](http://www.johannusvogel.com)
 
 ---
 

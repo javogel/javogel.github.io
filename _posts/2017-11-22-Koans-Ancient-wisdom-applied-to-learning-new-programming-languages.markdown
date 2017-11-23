@@ -15,12 +15,12 @@ published: true
 ---
 Something that has tremendously helped me on my journey as a Software Engineer is learning through Koans. 
 
-##What are Zen Koans?
+## What are Zen Koans?
 
 Koans in Zen are a sort of spiritual puzzles. Most times in the form of a short question posed by a master to a student. They are usually acompanied by a story. The plot can go something like this: a master poses a Koan to his student. The student then ponders over the question at hand. He tries several times to produce the right answer, but fails repeatedly, revealing to the master that he does not understand yet. The master guides the student by pointing the direction, but it is the student on his own who must reach understanding. The student keeps coming back with responses until he finally reaches the right answer, understanding the question, and one step closer to enlightenment. 
 
 
-##How is the concept of Koans applied to programming languages?
+## How is the concept of Koans applied to programming languages?
 
 It first started off with the [Ruby Koans][ruby]. They take inspiration from the concept of Zen Koans, basically short questions that require some fundamental understanding to get correct. These questions are applied by way of unit tests. And in these specific Koans there is even a path to enligtenment and a master guiding you so you don't get lost. The [Ruby Koans][ruby] are a CLI(Command Line Interface) based tool. Very easy to get started, and highly addictive once you get going. 
 

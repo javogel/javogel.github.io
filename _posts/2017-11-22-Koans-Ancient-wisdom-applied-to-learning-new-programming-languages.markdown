@@ -2,9 +2,15 @@
 title: 'Koans: Ancient wisdom applied to learning new programming languages'
 date: {}
 categories:
-  - jekyll
+  - software engineering
 tags:
-  - jekyll
+  - programming
+  - learning
+  - ruby
+  - python
+  - javascript
+  - elixir
+  - koans
 published: true
 ---
 Something that has tremendously helped me on my journey as a Software Engineer is learning through Koans. 
@@ -38,4 +44,3 @@ Even if your language of choice is not on the list, try searching for them. Chan
 [javascript]: https://github.com/mrdavidlaing/javascript-koans
 [python]: https://github.com/gregmalcolm/python_koans
 [elixir]: https://github.com/elixirkoans/elixir-koans
-

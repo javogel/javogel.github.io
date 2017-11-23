@@ -1,6 +1,6 @@
 ---
 title: 'Koans: Ancient wisdom applied to learning new programming languages'
-date: 2017-11-22T00:00:00.000Z
+date: 2017-11-23T00:00:00.000Z
 categories:
   - software engineering
 tags:

@@ -45,6 +45,19 @@ pre.highlight code,
   padding: 0 5px;
 }
 
+.post-meta__tags a {
+  border: 1px solid #e25440;
+  border-radius: 20px;
+  color: #e25440;
+  display: inline-block;
+  font-size: 10px;
+  margin: 5px 0;
+  padding: 3px 5px;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+
 .footer__copyright {
     margin: 0 20px 10px;
 }

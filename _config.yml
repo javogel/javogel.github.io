@@ -1,43 +1,44 @@
-# Site settings
+---
 title: Johannus Vogel
-description: 'Software engineer, artist, entrepreneur and internet poet'
-url: 'http://johannusvogel.com'
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+description: Software engineer, artist, entrepreneur and internet poet
+url: http://johannusvogel.com
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
-
 author:
-  name: 'Johannus Vogel'
+  name: Johannus Vogel
   email: johannus.vogel@gmail.com
   twitter_username: johannusvogel
   facebook_username: johannus.vogel
-  github_username:  javogel
-  linkedin_username:  johannusvogel
-
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
+  github_username: javogel
+  linkedin_username: johannusvogel
 destination: _site
 paginate: 10
-permalink: /:year/:title/
+permalink: "/:year/:title/"
 markdown: kramdown
 highlighter: rouge
-
 sass:
-    sass_dir: _sass
-    style: compressed
-
+  sass_dir: _sass
+  style: compressed
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
   hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+gems:
+- jekyll-paginate
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- screenshot.png

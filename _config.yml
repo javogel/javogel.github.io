@@ -16,7 +16,7 @@ defaults:
     layout: post
 description: Software engineer, artist, entrepreneur and internet poet
 url: http://johannusvogel.com
-baseurl: ''
+baseurl: 
 author:
   name: Johannus Vogel
   email: johannus.vogel@gmail.com

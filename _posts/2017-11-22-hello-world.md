@@ -1,7 +1,6 @@
 ---
 title: Hello World
-date: 2017-11-22T00:00:00.000Z
-published: true
+date: 2017-11-22 00:00:00 Z
 comments: true
 ---
 

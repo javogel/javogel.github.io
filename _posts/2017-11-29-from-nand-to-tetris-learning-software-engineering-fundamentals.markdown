@@ -4,9 +4,9 @@ date: 2017-11-29 23:30:00 Z
 categories:
 - software engineering
 tags:
-- Learning
-- Coursera
-- Software engineering
+- learning
+- coursera
+- software engineering
 comments: true
 ---
 

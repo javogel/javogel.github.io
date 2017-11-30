@@ -1,12 +1,14 @@
 ---
 title: 'From Nand to Tetris: Learning Software Engineering Fundamentals'
-date: 2017-11-29 23:30:00 Z
+date: 2017-11-29T23:30:00.000Z
 categories:
-- software engineering
+  - software engineering
 tags:
-- Learning
-- Coursera
-- Software engineering
+  - Learning
+  - Coursera
+  - Software engineering
+published: true
+comments: true
 ---
 
 We all have different paths to how we learned in order to become software engineers. Some of us learn it on their own, watching tutorials online, some reading books, some through experience, some majored in Computer Science in college, and others took some classes or a bootcamp. No matter the approach, a strong grasp of first principles is crucial.

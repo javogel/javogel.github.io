@@ -1,17 +1,16 @@
 ---
 title: 'Koans: Ancient wisdom applied to learning new programming languages'
-date: 2017-11-23T00:00:00.000Z
+date: 2017-11-23 00:00:00 Z
 categories:
-  - software engineering
+- software engineering
 tags:
-  - programming
-  - learning
-  - ruby
-  - python
-  - javascript
-  - elixir
-  - koans
-published: true
+- programming
+- learning
+- ruby
+- python
+- javascript
+- elixir
+- koans
 comments: true
 ---
 

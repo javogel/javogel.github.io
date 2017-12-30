@@ -2,40 +2,124 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Johannus Vogel</title>
-    <description>Software Engineer, artist, internet poet</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Nov 2017 13:23:04 -0600</pubDate>
-    <lastBuildDate>Tue, 21 Nov 2017 13:23:04 -0600</lastBuildDate>
+    <description>Software engineer, artist, entrepreneur and internet poet</description>
+    <link>http://johannusvogel.com/</link>
+    <atom:link href="http://johannusvogel.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 28 Dec 2017 00:06:03 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Dec 2017 00:06:03 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>From Nand to Tetris: Learning Software Engineering Fundamentals</title>
+        <description>&lt;p&gt;We all have different paths to how we learned in order to become software engineers. Some of us learn it on their own, watching tutorials online, some reading books, some through experience, some majored in Computer Science in college, and others took some classes or a bootcamp. No matter the approach, a strong grasp of first principles is crucial.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I think it’s important to reason from first principles rather than by analogy. The normal way we conduct our lives is we reason by analogy. [With analogy] we are doing this because it’s like something else that was done, or it is like what other people are doing. [With first principles] you boil things down to the most fundamental truths…and then reason up from there.
+-Elon Musk&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Not having studies Computer Science myself (I studied Industrial Engineering), I always felt there were some significant mental gaps in my understanding of how modern computers work.  specially at the lower levels. Given that I use computers everyday, this was something I was not only impatient to remedy, but also incredibly curious about. That is why one day when listening to &lt;a href=&quot;https://devchat.tv/ruby-rogues&quot;&gt;Ruby Rogues&lt;/a&gt;,  a wonderful  Ruby Podcast, someone mentioned something that caught my attention. At the end of the podcast each guest gives his pick, or recommendation. One of the guest recommended taking the online course &lt;a href=&quot;http://nand2tetris.org/&quot;&gt;From NAND to Tetris: Building a Modern Computer From First Principles&lt;/a&gt;. He recounted how much it had helped him solidify his foundational knowledge on computation. This was something I had to jump on.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;The course is available on &lt;a href=&quot;https://www.coursera.org/learn/build-a-computer&quot;&gt;Coursera &lt;/a&gt;in a very easy to consume format. It starts with teaching you some first principles of computation, and after each section you are tasked with implementing what you learned. The first week for example, you learn about combinatorial logic, and start with only one given, the Nand gate. From that single gate, you can build all other logic gates. That first week you have to implement And, Or, Xor, Dmux, Mux, and their many varying flavors, bus sizes, etc. The following weeks, you go on to implement more complex chips, building on top of the former, for example: an Algorithmic Logic Unit (ALU), Program Counter, and Random Access Memory (RAM) and so on.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/nand_gate.png&quot; alt=&quot;nand_gate.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m currently 3 weeks in and have a newfound appreciation about how these discrete computation machines really work. So much complexity and elegance at the same time. It has been eye opening to see first hand how the concept of abstraction and then symbolism is used all the way from the chip to software. I could not recommend this course more if you want to have a solid foundation as a Software Engineer.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Nov 2017 23:30:00 +0000</pubDate>
+        <link>http://johannusvogel.com/2017/from-nand-to-tetris-learning-software-engineering-fundamentals/</link>
+        <guid isPermaLink="true">http://johannusvogel.com/2017/from-nand-to-tetris-learning-software-engineering-fundamentals/</guid>
+        
+        <category>learning</category>
+        
+        <category>coursera</category>
+        
+        <category>software engineering</category>
+        
+        
+        <category>software engineering</category>
+        
+      </item>
+    
+      <item>
+        <title>Koans: Ancient wisdom applied to learning new programming languages</title>
+        <description>&lt;p&gt;Something that has tremendously helped me on my journey as a Software Engineer is learning through Koans.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-zen-koans&quot;&gt;What are Zen Koans?&lt;/h2&gt;
+
+&lt;p&gt;Koans in Zen are a sort of spiritual puzzle. Most times in the form of a short question posed by a master to a student. They are usually acompanied by a story. The plot can go something like this: a master poses a Koan to his student. The student then ponders over the question at hand. He tries several times to produce the right answer, but fails repeatedly, revealing to the master that he does not understand yet. The master guides the student by pointing the direction, but it is the student on his own who must reach understanding. The student keeps coming back with responses until he finally reaches the right answer, understanding the question, and one step closer to enlightenment.&lt;/p&gt;
+
+&lt;p&gt;Here is an example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A monk asked Zhao Zhou to teach him.
+Zhao Zhou asked, “Have you eaten your meal?”
+The monk replied, “Yes, I have.”
+“Then go wash your bowl,” said Zhao Zhou.
+At that moment, the monk was enlightened.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and another:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nan-in, a Japanese master during the Meiji era (1868-1912), received a university professor who came to inquire about Zen. Nan-in served tea. He poured his visitor’s cup full, and then kept on pouring. The professor watched the overflow until he no longer could restrain himself. “It is overfull. No more will go in!” “Like this cup,” Nan-in said, “you are full of your own opinions and speculations. How can I show you Zen unless you first empty your cup?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Don’t worry if some of these are lost on you. Some of them are lost on me too. They are not supposed to be easy. They only point the way, leaving the anwer for you to come to on your own. Here are some more &lt;a href=&quot;http://www.ashidakim.com/zenkoans/zenindex.html&quot;&gt;Zen Koans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-is-the-concept-of-koans-applied-to-programming-languages&quot;&gt;How is the concept of Koans applied to programming languages?&lt;/h2&gt;
+
+&lt;p&gt;It first started off with the &lt;a href=&quot;http://rubykoans.com/&quot;&gt;Ruby Koans&lt;/a&gt;. They take inspiration from the concept of Zen Koans, basically short questions that require some fundamental understanding to get correct. These questions are applied by way of unit tests. And in these specific Koans there is even a path to enligtenment and a master guiding you so you don’t get lost. The &lt;a href=&quot;http://rubykoans.com/&quot;&gt;Ruby Koans&lt;/a&gt; are a CLI(Command Line Interface) based tool. Very easy to get started, and highly addictive once you get going.&lt;/p&gt;
+
+&lt;p&gt;This same concept has, lucky for us students of programming, propagated to other languages. You can pretty much find Koans for any programming language that you wish. They come in varying flavors of implementation, with slightly different nuances and dificulty levels. But the general feeling is the same. At least for the ones I have tried.&lt;/p&gt;
+
+&lt;p&gt;I have found the Koans to be wonderful tools for getting a significant, yet highlevel view of a new programming language. All in 2-4 hours. Say, if I’m thinking of learning a new language, or I need to have a better grasp of it, for a personal project, or for work, I will usually get started the Koans for that language. It eases the learning curve for me.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the ones I’ve done and can recommend:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rubykoans.com/&quot;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mrdavidlaing/javascript-koans&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gregmalcolm/python_koans&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/elixirkoans/elixir-koans&quot;&gt;Elixir&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even if your language of choice is not on the list, try searching for them. Chances are they already exist in some form or other in someones github. Gotta be grateful for the wonderful world of Open Source, at least as it relates to software.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 08 Jan 2016 09:04:23 -0600</pubDate>
-        <link>http://localhost:4000/2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/welcome-to-jekyll/</guid>
+        <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://johannusvogel.com/2017/Koans-Ancient-wisdom-applied-to-learning-new-programming-languages/</link>
+        <guid isPermaLink="true">http://johannusvogel.com/2017/Koans-Ancient-wisdom-applied-to-learning-new-programming-languages/</guid>
         
-        <category>jekyll</category>
+        <category>programming</category>
+        
+        <category>learning</category>
+        
+        <category>ruby</category>
+        
+        <category>python</category>
+        
+        <category>javascript</category>
+        
+        <category>elixir</category>
+        
+        <category>koans</category>
         
         
-        <category>jekyll</category>
+        <category>software engineering</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;p&gt;So here we are. I finally have my own space on the web. I will post on an assortment of topics. Mainly about programming, the arts, travel, and my own thoughts. Even if the topics are dispersed I will try to use tags to taxonomize as best as I can. Most importantly, I’ll try to be consistent, and stick to this. Even if it means posting very short things to begin with. Hopefully that way I can find a rythm.&lt;/p&gt;
+
+&lt;p&gt;I’m looking forward to sharing my journey with you.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://johannusvogel.com/2017/hello-world/</link>
+        <guid isPermaLink="true">http://johannusvogel.com/2017/hello-world/</guid>
+        
         
       </item>
     

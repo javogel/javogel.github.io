@@ -1,7 +1,5 @@
 <template>
 
-  <header class="panel-cover" style="background-image: url(/images/cover.jpg)">
-
     <!-- <div id="dd">
       <canvas id="myCanvas" style="border:1px solid #c3c3c3;">
             Your browser does not support the canvas element.
@@ -98,7 +96,6 @@
 
       <div class="panel-cover--overlay"></div>
     </div>
-  </header>
 </template>
 
 
@@ -164,7 +161,7 @@ export default {
       this.newItem = '';
     },
     enter: function(el,done){
-      debugger;
+
       console.log("I wss here")
       // done();
     }

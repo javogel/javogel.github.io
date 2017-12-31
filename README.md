@@ -9,7 +9,10 @@ A simple Jekyll based portfolio and blog site. Live @ [http://www.johannusvogel.
 1. Download or clone repo
 3. If you don't have bundler installed: `gem install bundler`
 3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+4. ~~Start Jekyll server: `bundle exec jekyll serve --watch`~~
+5. Install npm with `npm install`
+6. Then `npm run jekyllfy`
+
 
 Access via: [http://localhost:4000/](http://localhost:4000/)
 

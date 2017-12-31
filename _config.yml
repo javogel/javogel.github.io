@@ -16,7 +16,7 @@ defaults:
     layout: post
 description: Software engineer, artist, entrepreneur and internet poet
 url: http://johannusvogel.com
-baseurl:
+baseurl: 
 google_analytics: UA-85017252-1
 disqus_shortname: johannus-vogel
 author:
@@ -49,8 +49,8 @@ exclude:
 - js/source.js
 - webpack.config.js
 - package.json
-- .jshintrc
-- .sass-cache
+- ".jshintrc"
+- ".sass-cache"
 - browser-sync.js
 - npm-debug.log
 - components

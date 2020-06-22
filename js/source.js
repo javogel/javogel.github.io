@@ -1,8 +1,8 @@
 // 🎌 IMPORT MODULES, COMPONENTS AND WHATNOT. CREATE THE VUE INSTANCE 🎌
-import Vue from 'vue'
+// import Vue from 'vue'
 // import WebFont from 'webfontloader'
 import Marked from 'marked'
-import App from '../components/app.vue'
+// import App from '../components/app.vue'
 
 
 // 🎌 GOOGLE FONTS, CAUSE TYPOGRAPHY 🎌
@@ -12,7 +12,7 @@ import App from '../components/app.vue'
 //  }
 // });
 
-var app = new Vue({
-  el: '#header-content',
-  render: h => h(App)
-})
+// var app = new Vue({
+//   el: '#header-content',
+//   render: h => h(App)
+// })

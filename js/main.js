@@ -83,41 +83,39 @@ $(document).ready(function(){
 
 
 
-//
+
 // $(document).ready(function () {
 // var canvas = document.getElementById('myCanvas');
+// var body = document.querySelector("body")
 // var ctx = canvas.getContext('2d');
-//
-// var sketch = document.querySelector("#dd");;
-// var sketch = document.querySelector("#dd");;
-// canvas.width = parseInt(sketch_style.getPropertyValue('width'));
-// canvas.height = parseInt(sketch_style.getPropertyValue('height'));
+
+// var sketch = document.querySelector(".panel-cover");
+
+// canvas.width = sketch.offsetWidth;
+// canvas.height = sketch.offsetHeight;
+
 //   var mouse = {x: 0, y: 0};
 //     var last_mouse = {x: 0, y: 0};
-//
+
 //     /* Mouse Capturing Work */
-//     canvas.addEventListener('mousemove', function(e) {
-//         last_mouse.x = mouse.x;
-//         last_mouse.y = mouse.y;
-//
-//         mouse.x = e.pageX - this.offsetLeft;
-//         mouse.y = e.pageY - this.offsetTop;
-//     }, false);
-//
+
+
 //     /* Drawing on Paint App */
 //     ctx.lineWidth = 5;
 //     ctx.lineJoin = 'round';
 //     ctx.lineCap = 'round';
 //     ctx.strokeStyle = 'blue';
-//
-//     canvas.addEventListener('mousedown', function(e) {
-//         canvas.addEventListener('mousemove', onPaint, false);
-//     }, false);
-//
-//     canvas.addEventListener('mouseup', function() {
-//         canvas.removeEventListener('mousemove', onPaint, false);
-//     }, false);
-//
+ 
+ 
+
+//     // canvas.addEventListener('mousedown', function(e) {
+//     //     canvas.addEventListener('mousemove', onPaint, false);
+//     // }, false);
+
+//     // canvas.addEventListener('mouseup', function() {
+//     //     canvas.removeEventListener('mousemove', onPaint, false);
+//     // }, false);
+
 //     var onPaint = function() {
 //         ctx.beginPath();
 //         ctx.moveTo(last_mouse.x, last_mouse.y);
@@ -125,6 +123,17 @@ $(document).ready(function(){
 //         ctx.closePath();
 //         ctx.stroke();
 //     };
-//
-//
+
+
+//     body.addEventListener('mousemove', function(e) {
+//       last_mouse.x = mouse.x;
+//       last_mouse.y = mouse.y;
+
+//       mouse.x = e.pageX - this.offsetLeft;
+//       mouse.y = e.pageY - this.offsetTop;
+
+
+//       onPaint()
+//   }, false);
+
 // });

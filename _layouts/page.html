@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <article class="post-container post-container--single">
 
   <header class="post-header">
@@ -13,3 +12,6 @@ layout: default
   </section>
 
 </article>
+
+
+{% if page.comments != false %}{% include disqus.html %}{% endif %}

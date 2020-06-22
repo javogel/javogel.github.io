@@ -50,13 +50,14 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1514686141670324000">
-  <link rel="canonical" href="http://johannusvogel.com/">
+  <link rel="stylesheet" href="/css/main.css?1592803912904352000">
+  <link rel="canonical" href="http://localhost:4000/">
   <link rel="alternate" type="application/rss+xml" title="Johannus Vogel" href="/feed.xml">
 </head>
 
 
   <body>
+ 
     <span class="mobile btn-mobile-menu">
   <i class="icon icon-list btn-mobile-menu__icon"></i>
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
@@ -65,9 +66,112 @@
 <div>
 
   <header class="panel-cover" style="background-image: url(/images/cover.jpg)">
-    <div id="header-content">
+    <div id="dd">
+      <canvas id="myCanvas" >
+            Your browser does not support the canvas element.
+      </canvas>
+    </div>
+    
+    <div class="panel-main">
+
+      <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+          <a href="/" title="link to home of Johannus Vogel">
+            <img src="/images/logo.png" class="user-image" alt="My Profile Photo">
+            <h1 class="panel-cover__title panel-title">Johannus Vogel</h1>
+          </a>
+          <hr class="panel-cover__divider">
+          <p class="panel-cover__description">Software engineer, artist, entrepreneur and internet poet</p>
+          <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+          <div class="navigation-wrapper">
+            <transition v-on:enter="enter" appear>
+                <nav class="cover-navigation cover-navigation--primary">
+                  <ul class="navigation">
+                    <li class="navigation__item"><a href="/#blog" title="link to Johannus' blog" class="blog-button">Blog</a></li>
+                  </ul>
+                </nav>
+            </transition>
+            <transition v-on:enter="enter" appear>
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/projects" title="Projects" class="projects-button">Projects</a></li>
+                </ul>
+              </nav>
+          </transition>
+
+            <nav class="cover-navigation navigation--social">
+              <ul class="navigation">
+
+
+                <!-- Twitter -->
+                <li class="navigation__item">
+                  <a href="http://twitter.com/johannus.vogel" title="@johannus.vogel on Twitter" target="_blank">
+                    <i class="icon icon-social-twitter"></i>
+                    <span class="label">Twitter</span>
+                  </a>
+                </li>
+
+                <!-- Facebook -->
+                <li class="navigation__item">
+                  <a href="http://fb.me/johannus.vogel" title="johannus.vogel on Facebook" target="_blank">
+                    <i class="icon icon-social-facebook"></i>
+                    <span class="label">Facebook</span>
+                  </a>
+                </li>
+
+
+
+                <!-- LinkedIn -->
+                <li class="navigation__item">
+                  <a href="https://www.linkedin.com/in/johannusvogel" title="johannusvogel on LinkedIn" target="_blank">
+                    <i class="icon icon-social-linkedin"></i>
+                    <span class="label">LinkedIn</span>
+                  </a>
+                </li>
+
+
+
+                <!-- GitHub -->
+                <li class="navigation__item">
+                  <a href="https://www.github.com/javogel" title="javogel on GitHub" target="_blank">
+                    <i class="icon icon-social-github"></i>
+                    <span class="label">GitHub</span>
+                  </a>
+                </li>
+
+
+
+                <!-- Email -->
+                <li class="navigation__item">
+                  <a href="mailto:johannus.vogel@gmail.com" title="Email johannus.vogel@gmail.com" target="_blank">
+                    <i class="icon icon-mail"></i>
+                    <span class="label">Email</span>
+                  </a>
+                </li>
+
+
+              <!-- RSS -->
+              <li class="navigation__item">
+                <a href="/feed.xml" title="Subscribe" target="_blank">
+                  <i class="icon icon-rss"></i>
+                  <span class="label">RSS</span>
+                </a>
+              </li>
+
+              </ul>
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="panel-cover--overlay"></div>
     </div>
   </header>
+
 </div>
 
     <div class="content-wrapper">
@@ -127,12 +231,12 @@
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2017 Johannus Vogel. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2020 Johannus Vogel. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1514686141670324000"></script>
-<script type="text/javascript" src="/js/bundle.js?1514686141670324000"></script>
+<script type="text/javascript" src="/js/main.js?1592803912904352000"></script>
+<script type="text/javascript" src="/js/bundle.js?1592803912904352000"></script>
 
 
     </div>

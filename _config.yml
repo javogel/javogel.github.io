@@ -18,7 +18,7 @@ defaults:
   values:
     layout: post
 description: Software engineer, artist, entrepreneur and internet poet
-url: http://johannusvogel.com
+url: https://johannusvogel.com
 baseurl: 
 google_analytics: UA-85017252-1
 disqus_shortname: johannus-vogel

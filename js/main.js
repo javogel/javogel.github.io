@@ -97,8 +97,6 @@ $(document).ready(function(){
 //   var mouse = {x: 0, y: 0};
 //     var last_mouse = {x: 0, y: 0};
 
-//     /* Mouse Capturing Work */
-
 
 //     /* Drawing on Paint App */
 //     ctx.lineWidth = 5;
@@ -107,14 +105,6 @@ $(document).ready(function(){
 //     ctx.strokeStyle = 'blue';
  
  
-
-//     // canvas.addEventListener('mousedown', function(e) {
-//     //     canvas.addEventListener('mousemove', onPaint, false);
-//     // }, false);
-
-//     // canvas.addEventListener('mouseup', function() {
-//     //     canvas.removeEventListener('mousemove', onPaint, false);
-//     // }, false);
 
 //     var onPaint = function() {
 //         ctx.beginPath();
@@ -125,7 +115,7 @@ $(document).ready(function(){
 //     };
 
 
-//     body.addEventListener('mousemove', function(e) {
+//    body.addEventListener('mousemove', function(e) {
 //       last_mouse.x = mouse.x;
 //       last_mouse.y = mouse.y;
 
@@ -137,3 +127,14 @@ $(document).ready(function(){
 //   }, false);
 
 // });
+
+
+
+
+
+
+
+
+
+
+

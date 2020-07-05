@@ -6,9 +6,12 @@
   "description": "Personal site. Built with [NPM](https://www.npmjs.com), [Vue](https://vuejs.org), and [Jekyll](https://jekyllrb.com).",
   "main": "main.js",
   "scripts": {
-    "packit": "webpack --watch",
-    "buildit": "bundle exec jekyll build --watch --incremental",
-    "jekyllfy": "npm run packit & npm run buildit & npm run serve",
+    "packit": "webpack --mode production",
+    "webpack-develop": "webpack --mode development --watch",
+    "buildit": "bundle exec jekyll build",
+    "jekyll-develop": "bundle exec jekyll serve --livereload --incremental",
+    "build": "npm run packit & npm run buildit",
+    "develop": "npm run webpack-develop & npm run jekyll-develop",
     "serve": "browser-sync start --config browser-sync.js"
   },
   "keywords": [

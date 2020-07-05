@@ -2,28 +2,34 @@
 layout: default
 ---
 
-<div class="main-post-list">
-  {{ content }}
-  <ol class="post-list">
- 
-    {% for i in (1..6) %}
-    <div class="gallery">
-      <a href="" title="">
-        <img src="/images/projects/{{ page.title }}/{{i}}.png" alt="" width="400" height="400">
-      </a>
-      <!-- <div class="desc">Add a description of the image here</div> -->
-    </div>
-    {% endfor %}
+<div class="project-container">
+  <div class="project-title">
+    <h1>{{ page.title | capitalize }}</h1>
+  </div>
+  <div class="project-body">
+    {{ content }}
+    <ol class="project-gallery">
+      {% for i in (1..6) %}
+      <div class="gallery-item">
+        <a href="" title="">
+          <img
+            src="/images/projects/{{ page.title }}/{{i}}.png"
+            alt=""
+          />
+        </a>
+        <!-- <div class="desc">Add a description of the image here</div> -->
+      </div>
+      {% endfor %}
+    </ol>
 
- 
-  </ol>
-
-  <hr class="post-list__divider ">
-
-  
+    <hr class="post-list__divider" />
+  </div>
 </div>
 
-
-
-{% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-{% if page.comments != false %}{% include disqus.html %}{% endif %}
+{% if page.comments != false and site.disqus_shortname %}
+  <section id="disqus_thread"></section>
+  <!-- /#disqus_thread -->
+{% endif %} 
+{% if page.comments != false %}
+  {% include disqus.html %}
+{% endif %}

@@ -21,8 +21,6 @@ const random = require('canvas-sketch-util/random');
 const tome = require('chromotome');
 
 
-debugger;
-
 const MULTIPLE_COLORS = true;
 
 const settings = {
@@ -319,7 +317,6 @@ const createGrid = (width, height, origin = { x: 0, y: 0 }) => {
         y: topRight.y + gridHeight,
       };
 
-      // if(bottomRight .y < 0) debugger;
 
       if (random.value() < 0 && gridWidth >= 50) {
         const children = createGrid(gridWidth, gridHeight, topLeft);
@@ -353,13 +350,7 @@ function drawMiniGrid(context, grid) {
 
   const gridBuilder = random.pick(builderTypes);
   context.save();
-  context.globalCompositeOperation = random.pick([
-    // "luminosity",
-    // "xor",
-    // "exclusion",
-    'source-over',
-    // 'darken',
-  ]);
+  context.globalCompositeOperation = 'source-over'
   gridBuilder(context, grid);
   context.restore();
 }

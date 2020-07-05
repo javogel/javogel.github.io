@@ -1,6 +1,6 @@
 <template>
 
-    <!-- <div id="dd">
+    <!-- <div id="canvas-container">
       <canvas id="myCanvas" style="border:1px solid #c3c3c3;">
             Your browser does not support the canvas element.
       </canvas>

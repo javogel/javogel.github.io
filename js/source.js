@@ -4,7 +4,6 @@
 // import Marked from 'marked'
 // import App from '../components/app.vue'
 
-
 // 🎌 GOOGLE FONTS, CAUSE TYPOGRAPHY 🎌
 // WebFont.load({
 //  google: {
@@ -17,9 +16,8 @@
 //   render: h => h(App)
 // })
 
-const random = require('canvas-sketch-util/random');
-const tome = require('chromotome');
-
+const random = require("canvas-sketch-util/random");
+const tome = require("chromotome");
 
 const MULTIPLE_COLORS = true;
 
@@ -68,13 +66,14 @@ function verticalLineGrid(context, grid) {
   paintBackground(context, grid);
   for (let x = 0; x < lineCount; x += 1) {
     context.fillStyle = random.pick(grid.color);
-    const colWidth = x === lineCount - 1 ? gridWidth - x * lineWidth : lineWidth;
+    const colWidth =
+      x === lineCount - 1 ? gridWidth - x * lineWidth : lineWidth;
 
     context.fillRect(
       grid.topLeft.x + x * lineWidth,
       grid.topLeft.y,
       colWidth,
-      gridHeight,
+      gridHeight
     );
   }
 }
@@ -90,12 +89,13 @@ function horizontalLineGrid(context, grid) {
     context.fillStyle = random.pick(grid.color);
 
     // If last row color all the way to the end
-    const rowHeight = y === lineCount - 1 ? gridHeight - y * lineHeight : lineHeight;
+    const rowHeight =
+      y === lineCount - 1 ? gridHeight - y * lineHeight : lineHeight;
     context.fillRect(
       grid.topLeft.x,
       grid.topLeft.y + y * lineHeight,
       gridWidth,
-      rowHeight,
+      rowHeight
     );
   }
 }
@@ -146,7 +146,7 @@ function circlesGrid(context, grid) {
       (gridWidth - i * circleDistanceX) / 2.8,
       0,
       Math.PI * 2,
-      false,
+      false
     );
     context.fill();
   }
@@ -217,9 +217,7 @@ function cubeGrid(context, grid) {
 }
 
 function xGrid(context, grid) {
-  const {
-    topLeft, topRight, bottomLeft, bottomRight,
-  } = grid;
+  const { topLeft, topRight, bottomLeft, bottomRight } = grid;
   const gridHeight = bottomLeft.y - topLeft.y;
   const gridWidth = bottomRight.x - bottomLeft.x;
 
@@ -249,9 +247,7 @@ function xGrid(context, grid) {
 }
 
 function chaoticGrid(context, grid) {
-  const {
-    topLeft, topRight, bottomLeft, bottomRight,
-  } = grid;
+  const { topLeft, topRight, bottomLeft, bottomRight } = grid;
   const gridHeight = bottomLeft.y - topLeft.y;
   const gridWidth = bottomRight.x - bottomLeft.x;
   const pointCount = 10;
@@ -299,8 +295,10 @@ const createGrid = (width, height, origin = { x: 0, y: 0 }) => {
 
       // In order to avoid floating point math errors the grid dimensions are rounded down
       // and the last row and column assume the remainder.
-      const gridWidth = x === countX - 1 ? width - miniGridWidth * x : miniGridWidth;
-      const gridHeight = y === count - 1 ? height - miniGridHeight * y : miniGridHeight;
+      const gridWidth =
+        x === countX - 1 ? width - miniGridWidth * x : miniGridWidth;
+      const gridHeight =
+        y === count - 1 ? height - miniGridHeight * y : miniGridHeight;
 
       const topRight = {
         x: topLeft.x + gridWidth,
@@ -316,7 +314,6 @@ const createGrid = (width, height, origin = { x: 0, y: 0 }) => {
         x: topRight.x,
         y: topRight.y + gridHeight,
       };
-
 
       if (random.value() < 0 && gridWidth >= 50) {
         const children = createGrid(gridWidth, gridHeight, topLeft);
@@ -345,36 +342,43 @@ function drawMiniGrid(context, grid) {
     circlesGrid,
     squaresGrid,
     horizontalLineGrid,
-    verticalLineGrid];
-
+    verticalLineGrid,
+  ];
 
   const gridBuilder = random.pick(builderTypes);
   context.save();
-  context.globalCompositeOperation = 'source-over'
+  context.globalCompositeOperation = "source-over";
   gridBuilder(context, grid);
   context.restore();
 }
 
-
-
 $(document).ready(function () {
-    var canvas = document.getElementById('myCanvas');
-    var body = document.querySelector("body")
-    var ctx = canvas.getContext('2d');
-    
-    var sketch = document.querySelector(".panel-cover");
-    
-    canvas.width = sketch.offsetWidth;
-    canvas.height = sketch.offsetHeight;
-    
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    random.setSeed(random.value());
-    
-    ctx.globalAlpha = 0.3;
-    createGrid(canvas.width, canvas.height).forEach((g) => {
-      drawMiniGrid(ctx, g);
-    });
+  var canvas = document.getElementById("myCanvas");
+  var body = document.querySelector("body");
 
- });
-    
+  var ctx = canvas.getContext("2d");
+
+  var sketch = document.querySelector(".panel-cover");
+
+  canvas.width = sketch.offsetWidth;
+  canvas.height = sketch.offsetHeight;
+
+  if (
+    canvas === undefined ||
+    body === undefined ||
+    sketch === undefined ||
+    canvas.width === 0 ||
+    canvas.height === 0
+  )
+    return;
+
+
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  random.setSeed(random.value());
+
+  ctx.globalAlpha = 0.3;
+  createGrid(canvas.width, canvas.height).forEach((g) => {
+    drawMiniGrid(ctx, g);
+  });
+});

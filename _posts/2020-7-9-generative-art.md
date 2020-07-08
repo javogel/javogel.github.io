@@ -1,9 +1,7 @@
 ---
-title: How I became facinated with creating generative art
+title: Generative Art - A Meditation
 date: 2020-7-9 00:00:00 Z
 comments: true
 ---
 
-So here we are. I finally have my own space on the web. I will post on an assortment of topics. Mainly about programming, the arts, travel, and my own thoughts. Even if the topics are dispersed I will try to use tags to taxonomize as best as I can. Most importantly, I'll try to be consistent, and stick to this. Even if it means posting very short things to begin with. Hopefully that way I can find a rythm.
-
-I'm looking forward to sharing my journey with you.
+Give the computer an instruction. Tell it to draw a circle here. Make the circle move and change colors according to the music. How about according to your mood? Is that possible? How about adding some pseudo-randomness. What if we make the circle morph and shape-shift into all the things we enjoy. Elephants, a couch, books, paneer, a moment to spare.  Like an ensless parade. A dream. Meanwhile the music is still blaring. Oh, I think that would be swell. 

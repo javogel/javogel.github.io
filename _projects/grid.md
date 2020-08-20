@@ -1,5 +1,6 @@
 ---
 title: grid
+gallery: grid
 comments: true
 image: grid.png
 layout: project

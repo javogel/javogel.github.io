@@ -5,9 +5,20 @@
     <description>Software engineer, artist, entrepreneur and internet poet</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 05 Jul 2020 15:45:13 +0000</pubDate>
-    <lastBuildDate>Sun, 05 Jul 2020 15:45:13 +0000</lastBuildDate>
+    <pubDate>Thu, 20 Aug 2020 08:42:59 +0000</pubDate>
+    <lastBuildDate>Thu, 20 Aug 2020 08:42:59 +0000</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Generative Art - A Meditation</title>
+        <description>&lt;p&gt;Give the computer an instruction. Tell it to draw a circle here. Make the circle move and change colors according to the music. How about according to your mood? Is that possible? How about adding some pseudo-randomness. What if we make the circle morph and shape-shift into all the things we enjoy. Elephants, a couch, books, paneer, a moment to spare.  Like an ensless parade. A dream. Meanwhile the music is still blaring. Oh, I think that would be swell.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2020/generative-art/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/generative-art/</guid>
+        
+        
+      </item>
     
       <item>
         <title>From Nand to Tetris: Learning Software Engineering Fundamentals</title>
